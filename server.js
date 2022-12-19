@@ -39,7 +39,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.send(database.users);
+  res.send("it is working");
 });
 
 app.post("/signin", (req, res) => {
@@ -50,6 +50,6 @@ app.post("/register", (req, res) => {
   register.handleRegister(req, res, knex, bcrypt);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT || 3000, () => {
   console.log(`app is running on port ${PORT}`);
 });
