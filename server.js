@@ -19,7 +19,6 @@ const signin = require("./controllers/signin");
 const corsConfig = {
   origin: "*",
 };
-const PORT = process.env.PORT;
 
 const app = express();
 app.use(bodyParser.json());
@@ -38,6 +37,7 @@ app.post("/register", (req, res) => {
   register.handleRegister(req, res, knex, bcrypt);
 });
 
-app.listen(PORT || 3000, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log(`app is running on port ${PORT}`);
 });
