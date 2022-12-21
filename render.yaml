@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: facerecog-prod-backend
+    name: face-recognition-server
     env: node
     plan: free
     buildCommand: yarn
