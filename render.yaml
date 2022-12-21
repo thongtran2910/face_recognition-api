@@ -10,7 +10,7 @@ services:
         value: production
       - key: DATABASE_URL
         fromDatabase:
-          name: face-recognition
+          name: face-recognition-database
           property: connectionString
       - key: SESSION_SECRET_KEY
         generateValue: true
