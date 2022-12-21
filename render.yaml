@@ -16,5 +16,5 @@ services:
         generateValue: true
 
 databases:
-  - name: face-recognition
+  - name: face-recognition-database
     plan: free
