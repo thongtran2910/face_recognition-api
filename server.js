@@ -7,7 +7,6 @@ const knex = require("knex")({
   client: "pg",
   connection: {
     host: "dpg-ceha0fp4reb94c0bt140-a",
-    port: 5432,
     user: "face_recognition_user",
     password: "0KuHvvBtIvBAAbsYkZiIJaN6JvEiJ6a0",
     database: "face_recognition",
