@@ -13,8 +13,6 @@ const handleSignin = (req, res, knex, bcrypt) => {
             .from("users")
             .where("email", "=", email)
             .then((user) => {
-              //   req.session.user = user[0];
-              // res.cookie;
               res.json(user[0]);
             })
             .catch((err) => res.status(400).json("unable to get user"));

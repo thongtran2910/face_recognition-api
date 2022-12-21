@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-const session = require("express-session");
 const bcrypt = require("bcrypt");
 const cors = require("cors");
 const knex = require("knex")({
@@ -26,17 +25,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors(corsConfig));
-app.use(
-  session({
-    secret: "thongdev29",
-    resave: false,
-    saveUninitialized: false,
-    cookie: {
-      path: "/",
-      maxAge: 60 * 60 * 24,
-    },
-  })
-);
 
 app.get("/", (req, res) => {
   res.send("it is working");
