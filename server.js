@@ -9,7 +9,7 @@ const knex = require("knex")({
     host: "127.0.0.1",
     user: "postgres",
     password: "thong2910",
-    database: "smart-brain",
+    database: "smartbrain",
   },
 });
 const register = require("./controllers/register");
