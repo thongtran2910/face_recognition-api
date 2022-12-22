@@ -33,7 +33,6 @@ app.post("/signin", (req, res) => {
 });
 
 app.post("/register", (req, res) => {
-  res.send("it is working too");
   register.handleRegister(req, res, knex, bcrypt);
 });
 
