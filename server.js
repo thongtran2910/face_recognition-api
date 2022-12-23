@@ -6,10 +6,10 @@ const cors = require("cors");
 const knex = require("knex")({
   client: "pg",
   connection: {
-    host: "dpg-ceha0fp4reb94c0bt140-a.singapore-postgres.render.com",
-    user: "face_recognition_user",
-    password: "0KuHvvBtIvBAAbsYkZiIJaN6JvEiJ6a0",
-    database: "face_recognition",
+    host: "containers-us-west-79.railway.app",
+    user: "postgres",
+    password: "PJIy6Is6ndI5waWnhvS5",
+    database: "railway",
   },
 });
 const register = require("./controllers/register");
