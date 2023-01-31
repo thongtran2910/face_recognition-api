@@ -8,7 +8,7 @@ const knex = require("knex")({
   connection: {
     host: "containers-us-west-79.railway.app",
     user: "postgres",
-    password: "PJIy6Is6ndI5waWnhvS5",
+    password: "fHHkGKLBksWsNUeANW10",
     database: "railway",
   },
 });
